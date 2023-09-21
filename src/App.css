@@ -1,0 +1,32 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 100vh;
+};
+
+form label {
+  justify-content: flex-start;
+  font-weight: 500;
+};
+
+form input {
+  height: 30px;
+  width: 100px;
+  outline: none;
+}
+
+span {
+  display: block;
+  color: tomato;
+  font-size: medium;
+  transition: all .5s ease-in-out;
+}
