@@ -7,16 +7,15 @@ const Register = () => {
   const [confirmMessageSubmit, setConfirmMessageSubmit] = useState(false)
 
   const {
-    handleSubmit, // sirve para enviar toda la data del input 
-    register, // registra los valores de los campos
-    reset, // para limpiar el(los) valor(es) del(de los) input(s)
-    formState: { errors }, // formState es un objeto que tiene propiedades las cuales pueden administrar los eventos que pasan cuando se envio el formulario 
-    watch, // es una función que tiene almacenada toda la data de los valores de los inputs del formulario
-    setValue // con este puedes asignar un clave:valor al objeto que almacena la data, los parametros que recibe son los siguientes: ('nombre de la clave': 'valor')
+    handleSubmit,
+    register,
+    reset,
+    formState: { errors },
+    watch,
+    setValue
   } = useForm({
     defaultValues: {
       name: "Luis",
-      // puede agregar más propiedades clave:valor para que tengan más valores por defecto (los agregas dandole de clave el nombre de input que le agregaste en register y el valor que quieres que tenga por defecto)
     }
   });
 
@@ -85,7 +84,7 @@ const Register = () => {
       }
 
 
-      <label htmlFor="birth">Celular</label>
+      <label htmlFor="birth">Fecha de Nacimiento</label>
       <input
         type="date"
         {...register("birth", errorsForm.birth)}

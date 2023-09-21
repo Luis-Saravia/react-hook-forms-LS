@@ -30,3 +30,9 @@ span {
   font-size: medium;
   transition: all .5s ease-in-out;
 }
+
+.messageCompleteForm {
+  color: green;
+  font-size: larger;
+  display: block;
+}
